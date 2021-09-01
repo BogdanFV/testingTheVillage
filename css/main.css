@@ -107,24 +107,36 @@ main h2{
     line-height: 65px;
     color: #000000;
 }
-.main-picture__block{
+.main-page__block{
+    position: relative;
+
+    height: 548px;
     margin-top: 64px;
     box-sizing: border-box;
     border-radius: 20px;
+}
+.main-page__block.main-block{
+    border: 1px solid #CCAA8B;
+    border-top: 39px solid #CCAA8B;
     background: url(/images/village-heat-cover.png) no-repeat;
-    background-size: contain;
+    background-size: 100%;
+    background-position: 0 -20px;
+}
+.main-block{
+
 }
 .main-picture-frame{
     position: relative;
     top:-19px;
     height: 39px;
-    background: #CCAA8B;
     box-sizing: border-box;
-    border-radius: 20px 20px 0px 0px;
+}
+.beige{
+    background: #CCAA8B;
 }
 .frame-circle{
     position: relative;
-    top:14px;
+    top:-25px;
     left:20px;
 
     border-radius: 25px;
@@ -138,7 +150,7 @@ main h2{
 }
 .star{
     z-index: 100;
-    position: relative;
+    position: absolute;
 
     width: 160px;
     height: 160px;
@@ -148,7 +160,85 @@ main h2{
     box-sizing: border-box;
     transform: rotate(-28.85deg);
 }
-.main-picture__block:nth-child(2){
-    top:500px;
-    left:647px;
+.main-page__block .star:nth-child(2){
+    top:-22%;
+    left:47.5%;
+}
+.main-page__block .star:nth-child(3){
+    top:58%;
+    left:90.8%;
+}
+.main-page__block .star:nth-child(4){
+    top:42%;
+    left:81.7%;
+}
+.main-page__block .star:nth-child(5){
+    top:40.5%;
+    left:-7.5%;
+}
+.main-page__block .star:nth-child(6){
+    top:74%;
+    left:0.5%;
+}
+.main-text{
+    margin-top: 88px;
+    height: 288px;
+    width: 1020px;
+    color: #000000;
+    font-family: 'IBM Plex Serif', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+}
+.main-page__block.blue{
+    border: 1px solid #0011A7;
+    border-top: 39px solid #0011A7;
+    margin-left: 80px;
+    width: 620px;
+    height: 400px;
+}
+.frame-name{
+    position: relative;
+    top:-38px;
+    left:47px;
+
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.first-block-heading{
+    margin-top: 46px;
+    margin-left: 45px;
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 26px;
+
+    color: #0011A7;
+}
+.first-block-heading span{
+    font-style: italic;
+}
+.first-block-heading::before{
+    display: inline-block;
+    vertical-align: top;
+    content: url(/images/heart.svg);
+    margin-right: 21px;
+}
+.first-block-text{
+    margin-top: 40px;
+    margin-left: 45px;
+    width:380px;
+
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+    color: #0011A7;
 }
