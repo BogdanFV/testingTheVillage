@@ -15,7 +15,7 @@
 </head>
 <body>
         <header>
-            <div class="header-logo-cover">
+            <div class="logo-cover">
                 <img src="/images/header-logo.png" class="header-logo__img">
             </div>
             <div class="header-village">
@@ -31,18 +31,6 @@
                 <div class="metainfo-category">личный опыт</div>
                 <div class="metainfo-border"></div>
                 <div class="current-date">
-                    <script language="javascript" type="text/javascript">
-                    const monthNames = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
-                                        "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"
-                                       ];
-                        var date = new Date();
-                        var dd = date.getDate();
-                        if (dd < 10) dd = '0' + dd;
-                        var mm = date.getMonth();
-                        var yy = date.getFullYear();
-                        if (yy < 10) yy = '0' + yy;
-                        document.write(dd + ' ' + monthNames[mm] + ' ' + yy);
-                    </script>
                 </div>
                 <div class="metainfo-border"></div>
                 <div class="metainfo-statistic">
@@ -54,7 +42,7 @@
             </div>
             <h1>Как понять, что с вашим сердцем что-то не так</h1>
             <h2>И как продлить его работу</h2>
-            <div class="main-page__block main-block">
+            <div class="main-page__block beige main-block">
                 <div class="frame-circle"></div>
                 <div class="star">
                     <img class="star__img" src="/images/star-picture.svg">
@@ -73,16 +61,71 @@
                 </div>
             </div>
             <div class="main-text">В научно-популярных публикациях сердце часто называют главной мышцей тела и самым трудолюбивым органом. И хотя мы можем сказать о человеке, что он бессердечный, физически представить его без этого органа и при этом живым – невозможно. В совместном проекте с биофармацевтической компанией Санофи мы решили разобраться в обязанностях сердца. Как часто надо сокращаться? Сколько крови перегонять? Сколько места занимать? Проверьте свои знания в нашем интерактивном тесте.</div>
-            <div class="main-page__block blue">
+            <div id="first-block" class="main-page__block blue">
                 <div class="frame-circle"></div>
                 <div class="frame-name">Задание №1</div>
-                <div class="first-block-heading">В ритме <span>сердца</span></div>
+                <div class="block-heading first-block-heading">В ритме <span>сердца</span></div>
                 <div class="first-block-text">Кликайте мышью по сердцу с <br> частотой, которая, по-вашему мнению, соответствует работе здорового сердца в состоянии покоя.</div>
             </div>
+            <div id="second-block" class="main-page__block blue first-game">
+                <div class="frame-circle"></div>
+                <div class="frame-name">Задание №1</div>
+                <div id="heart-beats" class="block-heading second-block-heading"></div>
+                <div class="heart-game">
+                    <img id="heart-image" class="heart-game__img" src="/images/heart-picture.png" >
+                </div>
+                <div class="first-game-button-cover">
+                    <button id="first-game__button" class="first-game__button">Узнать ответ</button>
+                </div>
+            </div>
+            
+            <div id="first-answer-block" class="first-answer-block hidden">
+                <div class="main-page__block blue">
+                    <div class="first-answer">
+                        <div class="first-answer-number">7<span>2</span></div>
+                        <div class="first-answer-hits">удара <p>в минуту</p></div>
+                    </div>
+                    <div class="blue-line"></div>
+                    <div class="first-answer-text">На частоту сердечных сокращений влияет <span class="underline">множество</span> факторов: 
+                        от возраста и телосложения до наличия вредных привычек и настроения. 
+                        Даже положение, в котором вы измеряете пульс (сидя или лежа), 
+                        может сказаться на результате. В среднем, сердце здорового человека 
+                        совершает <span class="bold">72 удара в минуту.</span> При этом любое значение от 60 до 100 
+                        считается нормальным. Нарушения частоты и ритмичности сердечных сокращений 
+                        называют аритмиями. В эту группу входят заболевания разной природы, которые 
+                        изучают профильные специалисты.
+                    </div>
+                    <div class="next-game-button-cover">
+                        <button class="next-game__button">Следующее задание</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-page__block beige last-block">
+                <div class="frame-circle"></div>
+                <div class="last-block-heading">Сердце главное</div>
+                <div class="last-block-text">Но разобраться, правильно ли оно работает, — 
+                    это вам не тест в интернете пройти. Только специалист 
+                    (и лишь после полного обследования) может сказать, все ли в порядке 
+                    с «главной» мышцей вашего организма. Пока вы собираетесь записаться на прием, 
+                    посмотрите серию коротких видео просветительского проекта «Сердце главное», 
+                    запущенного биофармацевтической компанией Санoфи. В них специалисты рассказывают, 
+                    как поддерживать здоровье сердца, что такое гипертония и инфаркт и как быть, 
+                    если болезнь не обошла вас стороной. Да, широкий кругозор не может заменить прием 
+                    специалиста — но он поможет сформулировать вопросы и получить от приема максимум.
+                </div>
+                <div class="last-block-button-cover">
+                    <button class="last-block__button">Хочу знать больше</button>
+                </div>
+            </div>
+            <div class="page-tag">MAT-RU-2100343-1.0-02/2021</div>
         </main>
     </div>
     <footer>
-
+        <div class="assistance-tag">Материал подготовлен при поддержке</div>
+        <div class="logo-cover">
+            <img src="/images/header-logo.png" class="header-logo__img">
+        </div>
     </footer>
     <script src="script.js">
 

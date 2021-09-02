@@ -5,7 +5,7 @@
 header{
     width: 100%;
 }
-.header-logo-cover{
+.logo-cover{
     margin-left: auto;
     margin-right: auto;
     margin-top: 28px;
@@ -116,23 +116,19 @@ main h2{
     border-radius: 20px;
 }
 .main-page__block.main-block{
-    border: 1px solid #CCAA8B;
-    border-top: 39px solid #CCAA8B;
     background: url(/images/village-heat-cover.png) no-repeat;
     background-size: 100%;
     background-position: 0 -20px;
 }
-.main-block{
-
+.beige{
+    border: 1px solid #CCAA8B;
+    border-top: 39px solid #CCAA8B;
 }
 .main-picture-frame{
     position: relative;
     top:-19px;
     height: 39px;
     box-sizing: border-box;
-}
-.beige{
-    background: #CCAA8B;
 }
 .frame-circle{
     position: relative;
@@ -192,6 +188,8 @@ main h2{
     line-height: 36px;
 }
 .main-page__block.blue{
+    position: absolute;
+
     border: 1px solid #0011A7;
     border-top: 39px solid #0011A7;
     margin-left: 80px;
@@ -210,8 +208,7 @@ main h2{
     line-height: 15px;
     color: #FFFFFF;
 }
-.first-block-heading{
-    margin-top: 46px;
+.block-heading{
     margin-left: 45px;
     font-family: 'IBM Plex Sans', serif;
     font-style: normal;
@@ -221,10 +218,16 @@ main h2{
 
     color: #0011A7;
 }
-.first-block-heading span{
+.first-block-heading{
+    margin-top: 46px;
+}
+.second-block-heading{
+    margin-top: 25px;
+}
+.block-heading span{
     font-style: italic;
 }
-.first-block-heading::before{
+.block-heading::before{
     display: inline-block;
     vertical-align: top;
     content: url(/images/heart.svg);
@@ -241,4 +244,242 @@ main h2{
     font-size: 22px;
     line-height: 29px;
     color: #0011A7;
+}
+.main-page__block.first-game{
+    position: relative;
+    left: 481px;
+    top:85px;
+
+    height: 650px;
+    background-color:#F0F4FE;
+}
+.heart-game{
+    width: 279px;
+    height: 382px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heart-game__img{
+    width: 279px;
+    height: 382px;
+}
+.first-game-button-cover{
+    position: relative;
+    width: 290px;
+    height: 60px;
+    top:68px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.first-game__button{
+    
+    width: 290px;
+    height: 60px;
+    background: #0011A7;
+    border-radius: 20px; 
+    border: none;
+    
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
+    color: white;
+}
+.last-block{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 242px;
+    width: 940px;
+    height: 640px;
+
+    background-color: #F4F1EB;
+}
+.last-block-heading{
+    margin-top: 79px;
+    margin-left: 80px;
+
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 26px;
+    color: #2D2621;
+}
+.last-block-text{
+    
+    width:700px;
+    margin-top: 35px;
+    margin-left: 80px;
+    font-family: 'IBM Plex Sans', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+    color: #2D2621;
+}
+.last-block-button-cover{
+    width: 290px;
+    height: 60px;
+    margin-left: 80px;
+    margin-top: 47px;
+
+}
+.last-block__button{
+    width: 290px;
+    height: 60px;
+    background: #CCAA8B;
+    border-radius: 20px; 
+    border: none;
+    
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    text-align: center;
+    color: white;
+}
+.page-tag{
+
+    margin-left: 180px;
+    margin-top: 10px;
+
+    font-family: 'IBM Plex Sans', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+
+    color: #CCAA8B;
+}
+.assistance-tag{
+    width: 220px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.123077px;
+
+    color: #909090;
+}
+footer .logo-cover{
+    margin-top: 9px;
+    margin-bottom: 92px;
+}
+.hidden{
+    display: none;
+}
+.first-answer{
+    margin-left: 80px;
+    margin-top: 29.48px;
+}
+.first-answer-block{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 940px;
+    height: 704px;
+}
+.first-answer-block .main-page__block.blue{
+
+    width: 940px;
+    height: 704px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first-answer-number{
+    display: inline-block;
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 200px;
+    line-height: 200px;
+
+    letter-spacing: -10px;
+
+    color: #0011A7;
+}
+.first-answer-number span{
+    font-family: 'IBM Plex Serif', serif;
+    font-style: italic;
+    font-weight: 300;
+}
+.first-answer-hits{
+    display: inline-block;
+    margin-left: 39px;
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+
+    color: #0011A7;
+}
+.first-answer-hits p{
+    font-style: italic;
+    font-family: 'IBM Plex Sans', serif;
+}
+.first-answer-text{
+    margin-top: 70px;
+    padding-left: 80px;
+    width:700px;
+
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+
+    color: #0011A7;
+}
+.first-answer-text .underline{
+    text-decoration: underline;
+}
+.first-answer-text .bold{
+    font-weight: bold;
+}
+.blue-line{
+    margin-top: 46px;
+    border-top: 1px solid #0011A7;
+}
+.next-game-button-cover{
+    position: relative;
+    width: 290px;
+    height: 60px;
+    top:47px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.next-game__button{
+    width: 290px;
+    height: 60px;
+    background: #0011A7;
+    border-radius: 20px; 
+    border: none;
+    
+    font-family: 'IBM Plex Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
+    color: white;
 }
