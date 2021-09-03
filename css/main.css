@@ -100,6 +100,7 @@ main h1{
     color: #000000;
 }
 main h2{
+    margin-bottom: 64px;
     font-family: 'IBM Plex Serif', serif;
     font-style: normal;
     font-weight: 400;
@@ -107,22 +108,23 @@ main h2{
     line-height: 65px;
     color: #000000;
 }
-.main-page__block{
-    position: relative;
-
-    height: 548px;
-    margin-top: 64px;
+.main-page__block{ 
+    border: 1px solid;
+    border-top: 39px solid;
     box-sizing: border-box;
     border-radius: 20px;
 }
-.main-page__block.main-block{
+.main-block{
+    height: 548px;
     background: url(/images/village-heat-cover.png) no-repeat;
     background-size: 100%;
     background-position: 0 -20px;
 }
+.blue{
+    color:#0011A7;
+}
 .beige{
-    border: 1px solid #CCAA8B;
-    border-top: 39px solid #CCAA8B;
+    color:#CCAA8B;
 }
 .main-picture-frame{
     position: relative;
@@ -145,39 +147,41 @@ main h2{
     border-radius: 0 0 20px 20px;
 }
 .star{
-    z-index: 100;
-    position: absolute;
-
+    position: relative;
     width: 160px;
     height: 160px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: rotate(-28.85deg);
 }
 .star__img{
 
     box-sizing: border-box;
-    transform: rotate(-28.85deg);
 }
 .main-page__block .star:nth-child(2){
-    top:-22%;
-    left:47.5%;
+    top:201px;
+    left:-70px;
 }
 .main-page__block .star:nth-child(3){
-    top:58%;
-    left:90.8%;
+    top:201px;
+    left:-70px;
 }
 .main-page__block .star:nth-child(4){
-    top:42%;
-    left:81.7%;
+    top:-210px;
+    left:-70px;
 }
 .main-page__block .star:nth-child(5){
-    top:40.5%;
-    left:-7.5%;
+    top:-210px;
+    left:-70px;
 }
 .main-page__block .star:nth-child(6){
-    top:74%;
-    left:0.5%;
+    top:-210px;
+    left:-70px;
 }
 .main-text{
     margin-top: 88px;
+    margin-bottom: 125px;
     height: 288px;
     width: 1020px;
     color: #000000;
@@ -187,11 +191,10 @@ main h2{
     font-size: 28px;
     line-height: 36px;
 }
-.main-page__block.blue{
+.first-challenge-block{
+    
     position: absolute;
 
-    border: 1px solid #0011A7;
-    border-top: 39px solid #0011A7;
     margin-left: 80px;
     width: 620px;
     height: 400px;
@@ -245,12 +248,15 @@ main h2{
     line-height: 29px;
     color: #0011A7;
 }
-.main-page__block.first-game{
+.first-game{
     position: relative;
-    left: 481px;
-    top:85px;
 
+    margin-left: 80px;
+    top:85px;
+    left:481px;
     height: 650px;
+    width: 620px;
+
     background-color:#F0F4FE;
 }
 .heart-game{
@@ -293,7 +299,7 @@ main h2{
 .last-block{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 242px;
+    margin-top: 181px;
     width: 940px;
     height: 640px;
 
@@ -392,7 +398,6 @@ footer .logo-cover{
 .first-answer-block{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
     width: 940px;
     height: 704px;
 }
@@ -436,9 +441,12 @@ footer .logo-cover{
     font-family: 'IBM Plex Sans', serif;
 }
 .first-answer-text{
+    position: absolute;
+
     margin-top: 70px;
     padding-left: 80px;
-    width:700px;
+    width:780px;
+    height: 208px;
 
     font-family: 'IBM Plex Sans', serif;
     font-style: normal;
@@ -462,7 +470,7 @@ footer .logo-cover{
     position: relative;
     width: 290px;
     height: 60px;
-    top:47px;
+    top:-120px;
 
     margin-left: auto;
     margin-right: auto;
@@ -482,4 +490,42 @@ footer .logo-cover{
 
     text-align: center;
     color: white;
+}
+.dialog-block{
+    position: relative;
+    left:415px;
+    top:-401px;
+}
+.dialog{
+    width: 198px;
+    height:71px;
+    padding: 14px 17px 15px;
+    font-family: 'IBM Plex Sans', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    background-color: #0011A7;
+    color: white;
+    border-radius: 20px;
+}
+.dialog-triangle{
+    margin-left: 91px;
+    width: 16px;
+    height: 17px;
+
+    clip-path: polygon(0% 0%, 100% 0%, 50% 70% );
+    background-color: #0011A7;
+}
+.first-answer-block .heart-game{
+    position: relative;
+    left: 656px;
+    top:-237px;
+    margin:0;
+}
+.first-answer-block .heart-game__img{
+    
+    width: 205px;
+    height: 279px;
 }
