@@ -60,32 +60,45 @@
                     <img class="star__img" src="/images/star.svg">
                 </div>
             </div>
-            <div class="main-text">В научно-популярных публикациях сердце часто называют главной мышцей тела и самым трудолюбивым органом. И хотя мы можем сказать о человеке, что он бессердечный, физически представить его без этого органа и при этом живым – невозможно. В совместном проекте с биофармацевтической компанией Санофи мы решили разобраться в обязанностях сердца. Как часто надо сокращаться? Сколько крови перегонять? Сколько места занимать? Проверьте свои знания в нашем интерактивном тесте.</div>
-            <div id="first-block" class="main-page__block blue first-challenge-block">
+
+            <div class="main-text">В научно-популярных публикациях сердце часто называют 
+                главной мышцей тела и самым трудолюбивым органом. 
+                И хотя мы можем сказать о человеке, что он бессердечный, 
+                физически представить его без этого органа и при этом живым – невозможно. 
+                В совместном проекте с биофармацевтической компанией 
+                Санофи мы решили разобраться в обязанностях сердца. 
+                Как часто надо сокращаться? Сколько крови перегонять? Сколько места занимать? 
+                Проверьте свои знания в нашем интерактивном тесте.
+            </div>
+
+            <div id="main-block-first-game" class="main-page__block blue first-challenge-block hidden">
                 <div class="frame-circle"></div>
                 <div class="frame-name">Задание №1</div>
-                <div class="block-heading first-block-heading">В ритме <span>сердца</span></div>
+                <div class="block-heading first-block-heading blue-heart">В ритме <span>сердца</span></div>
                 <div class="first-block-text">Кликайте мышью по сердцу с <br> частотой, которая, по-вашему мнению, соответствует работе здорового сердца в состоянии покоя.</div>
             </div>
-            <div id="second-block" class="main-page__block blue first-game">
+            <div id="meta-block-first-game" class="main-page__block blue game first-game hidden">
                 <div class="frame-circle"></div>
                 <div class="frame-name">Задание №1</div>
-                <div id="heart-beats" class="block-heading second-block-heading"></div>
-                <div class="heart-game">
-                    <img id="heart-image" class="heart-game__img" src="/images/heart-picture.png" >
+                <div id="heart-beats" class="block-heading second-block-heading blue-heart"></div>
+                <div class="first-heart-game">
+                    <img id="heart-image" class="first-heart-game__img" src="/images/heart-picture.png" >
                 </div>
-                <div class="first-game-button-cover">
-                    <button id="first-game__button" class="first-game__button">Узнать ответ</button>
+                <div class="game-button-cover">
+                    <button id="first-game__button" class="game__button blue-background">Узнать ответ</button>
                 </div>
             </div>
             
-            <div id="first-answer-block" class="first-answer-block hidden">
+            <div id="first-answer-block" class="answer-block hidden">
                 <div class="main-page__block blue ">
+                    <div class="first-heart-game">
+                        <img id="heart-image" class="first-heart-game__img" src="/images/heart-picture.png" >
+                    </div>
                     <div class="first-answer">
                         <div class="first-answer-number">7<span>2</span></div>
                         <div class="first-answer-hits">удара <p>в минуту</p></div>
                     </div>
-                    <div class="blue-line"></div>
+                    <div class="line"></div>
                     <div class="first-answer-text">
                         На частоту сердечных сокращений влияет <span class="underline">множество</span> факторов: 
                         от возраста и телосложения до наличия вредных привычек и настроения. 
@@ -96,16 +109,250 @@
                         называют аритмиями. В эту группу входят заболевания разной природы, которые 
                         изучают профильные специалисты.
                     </div>
-                    <div class="heart-game">
-                        <img id="heart-image" class="heart-game__img" src="/images/heart-picture.png" >
-                    </div>
                     <div class="dialog-block">
-                        <div class="dialog">Даже положение, в котором вы измеряете пульс (сидя или лежа)</div>
-                        <div class="dialog-triangle"></div>
+                        <div class="dialog blue-background">Даже положение, в котором вы измеряете пульс (сидя или лежа)</div>
+                        <div class="dialog-triangle blue-background"></div>
                     </div>
                     <div class="next-game-button-cover">
-                        <button class="next-game__button">Следующее задание</button>
+                        <button id="first-ending" class="next-game__button blue-background">Следующее задание</button>
                     </div>
+                </div>
+            </div>
+
+            <div id="main-block-second-game" class="main-page__block purple first-challenge-block hidden">
+                <div class="frame-circle"></div>
+                <div class="frame-name">Задание №2</div>
+                <div class="block-heading first-block-heading purple-heart">Сердце, <span>соберись</span></div>
+                <div class="first-block-text">Сердце состоит из предсердий и желудочков. Но сколько их и как они располагаются? Давайте вспоминать — расставьте элементы на картинке в правильном порядке.</div>
+            </div>
+            <div id="meta-block-second-game" class="main-page__block purple game second-game hidden">
+                <div class="frame-circle"></div>
+                <div class="frame-name">Задание №2</div>
+                <div class=second-game-img-cover>
+                    <img class="second-game__img" src="/images/heart-parts/heart-main-part.png">
+                </div>
+                <div id="first-heart-part" class="heart-part first-heart-part">
+                    <img class="first-heart-part__img" src="/images/heart-parts/first-heart-part.png">
+                </div>
+                <div id="second-heart-part" class="heart-part second-heart-part">
+                    <img class="second-heart-part__img" src="/images/heart-parts/second-heart-part.png">
+                </div>
+                <div id="third-heart-part" class="heart-part third-heart-part">
+                    <img class="third-heart-part__img" src="/images/heart-parts/third-heart-part.png">
+                </div>
+                <div id="fourth-heart-part" class="heart-part fourth-heart-part">
+                    <img class="fourth-heart-part__img" src="/images/heart-parts/fourth-heart-part.png">
+                </div>
+                <div id="fifth-heart-part" class="heart-part fifth-heart-part">
+                    <img class="fifth-heart-part__img" src="/images/heart-parts/fifth-heart-part.png">
+                </div>
+                <div class="game-button-cover">
+                    <button id="second-game__button" class="game__button purple-background">Узнать ответ</button>
+                </div>
+            </div>
+            
+            <div id="second-answer-block" class="answer-block hidden">
+                <div class="main-page__block purple ">
+                    <div class="first-answer">В сердце четыре камеры: <br>
+                        <span>правое предсердие, правый желудочек, 
+                        левое предсердие и левый желудочек</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="second-answer-row">
+                        <div class="full-heart-img-cover">
+                            <div class="first-pointer pointer">
+                                <img class="" src=images/pointer-arrow.svg >
+                            </div>
+                            <div class="first-pointer-text pointer-text">
+                                Правое <br> предсердие
+                            </div>
+                            <div class="second-pointer pointer">
+                                <img class="" src=images/pointer-arrow.svg >
+                            </div>
+                            <div class="second-pointer-text pointer-text">
+                                Левое <br> предсердие
+                            </div>
+                            <div class="third-pointer pointer">
+                                <img class="" src=images/pointer-arrow.svg >
+                            </div>
+                            <div class="third-pointer-text pointer-text">
+                                Правый <br> желудочек
+                            </div>
+                            <div class="fourth-pointer pointer">
+                                <img class="" src=images/pointer-arrow.svg >
+                            </div>
+                            <div class="fourth-pointer-text pointer-text">
+                                Левый <br> желудочек
+                            </div>
+                            <img class="full-heart__img" src="/images/full-heart-img.png">
+                        </div>
+                        <div class="second-answer-text">
+                            Они разделены перегородками, которые не позволяют венозной и 
+                            артериальной крови смешиваться, и клапанами, которые регулируют 
+                            ее прохождение в одну сторону — но не обратно. Нарушения их работы 
+                            называются клапанными пороками. Поначалу они часто протекают 
+                            бессимптомно, поэтому выявить их довольно сложно. Вовремя обнаружить 
+                            порок (или другие проблемы) может помочь своевременная консультация 
+                            специалиста и, при необходимости, назначенные им в индивидуальном 
+                            порядке обследования, например, УЗИ сердца.
+                        </div>
+                    </div>
+                    <div class="next-game-button-cover">
+                        <button id="second-ending" class="next-game__button purple-background">Следующее задание</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main-block-third-game" class="main-page__block green first-challenge-block hidden">
+                <div class="frame-circle"></div>
+                <div class="frame-name">Задание №3</div>
+                <div class="block-heading first-block-heading green-heart">На связи <span>с сердцем</span></div>
+                <div class="first-block-text">До визита в поликлинику или между ними вы и сами можете измерять свое давление и пульс. Выберите прибор для этого.</div>
+            </div>
+            <div id="meta-block-third-game" class="main-page__block green game third-game hidden">
+                <div class="frame-circle"></div>
+                <div class="frame-name">Задание №3</div>
+                <div class="mechanism first-mechanism">
+                    <img id="thermometer" class="thermometer" src="images/third-challenge/thermometer.png">
+                </div>
+                <div class="mechanism second-mechanism">
+                    <img id="player" class="player" src="images/third-challenge/player.png">
+                </div>
+                <div class="mechanism third-mechanism">
+                    <img id="tonometer" class="tonometer" src="images/third-challenge/tonometer.png">
+                </div>
+                <div class="game-button-cover">
+                    <button id="third-game__button" class="game__button green-background">Узнать ответ</button>
+                </div>
+            </div>
+
+            <div id="third-answer-block" class="answer-block hidden">
+                <div class="main-page__block green">
+                    <div class="third-answer-text">
+                        Знакомый с детства тонометр с помощью <br> 
+                        манжеты, надетой на руку, измеряет <br> 
+                        артериальное давление, фиксируя его <br> 
+                        скачки, а точнее, интервалы между ними. <br>
+                        Прибор позволяет одновременно узнать <br>
+                        и давление, и пульс. Но тонометр дает <br>
+                        показания в конкретный момент. <br><br>
+
+                        Если вы вдруг распереживались при виде<br>
+                        человека в халате или карабкались к <br>
+                        нему на четвертый этаж, результаты <br>
+                        могут быть неточными. В этом случае <br>
+                        можно воспользоваться портативным <br>
+                        прибором, который будет фиксировать <br>
+                        изменения АД в течение всего дня. <br>
+                        Больше данных специалисту поможет <br>
+                        собрать дневник самочувствия.
+                    </div>
+                    <div class="tonometer-img-cover">
+                        <img class="tonometer__img" src="/images/third-challenge/tonometer.png">
+                    </div>
+                </div>
+                <div class="next-game-button-cover">
+                    <button id="third-ending" class="next-game__button green-background">Следующее задание</button>
+                </div>
+            </div>
+
+            <div id="main-block-fourth-game" class="main-page__block red first-challenge-block hidden">
+                <div class="frame-circle"></div>
+                <div class="frame-name">Задание №4</div>
+                <div class="block-heading first-block-heading red-heart">Скажи <span> когда</span></div>
+                <div class="first-block-text">
+                    Знаете, сколько литров крови в 
+                    организме человека? Остановитесь 
+                    на нужной отметке.
+                </div>
+            </div>
+            <div id="meta-block-fourth-game" class="main-page__block red game fourth-game hidden">
+                <div class="frame-circle"></div>
+                <div class="frame-name">Задание №4</div>
+                <div id="body-size" class="block-heading second-block-heading red-heart"></div>
+                <div class="bottle-img-cover">
+                    <img id="bottle-1" class="bottle__img bottle-1" src="/images/bottles/bottle-1.png">
+                    <img id="bottle-2" class="bottle__img bottle-2 hidden" src="/images/bottles/bottle-2.png">
+                    <img id="bottle-3" class="bottle__img bottle-3 hidden" src="/images/bottles/bottle-3.png">
+                    <img id="bottle-4" class="bottle__img bottle-4 hidden" src="/images/bottles/bottle-4.png">
+                    <img id="bottle-5" class="bottle__img bottle-5 hidden" src="/images/bottles/bottle-5.png">
+                </div>
+                <div class="game-button-cover bottle-button-cover">
+                    <button id="bottle__button" class="game__button bottle__button">Добавить крови</button>
+                </div>
+                <div class="game-button-cover">
+                    <button id="fourth-game__button" class="game__button red-background">Узнать ответ</button>
+                </div>
+            </div>
+
+            <div id="fourth-answer-block" class="answer-block hidden">
+                <div class="main-page__block red">
+                    <div class="fourth-answer-stats">
+                        <div class="bottles-block">
+                            <div class="small-bottle-cover">
+                                <img class="small-bottle" src="/images/bottles/bottle-4.png">
+                            </div>
+                            <div class="bottle-text">
+                                <span class="big-number">≈4</span><br>
+                                литра крови<br>
+                                в <span class="italic-text">женском</span><br>
+                                <span>организме</span>
+                            </div>
+                            <div class="big-bottle-cover">
+                                <img class="big-bottle" src="/images/bottles/bottle-5.png">
+                            </div>
+                            <div class="bottle-text">
+                                <span class="big-number">≈5</span><br>
+                                литров крови<br>
+                                в <span class="italic-text">мужском</span><br>
+                                <span>организме</span>
+                            </div>
+                        </div>
+                        <div class="fifth-bottle-block row"></div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="fourth-answer-text">
+                        В мужском организме около пяти литров крови, в женском — порядка <br>
+                        четырех. Кровь движется невероятно быстро: малый круг кровообращения <br> 
+                        она проходит за 5 секунд, большой — за 27. Неудивительно, что за час <br> 
+                        сердце может пропустить через себя до 300 литров крови. Быстрее всего <br> 
+                        кровь идет по аорте — 25 сантиметров в секунду. Медленнее всего — в <br>
+                        крошечных капиллярах, где скорость падает до `<` 0,1 сантиметра в секунду. <br><br> 
+                        С возрастом сердце может хуже справляться с частью своих функций (в <br> 
+                        частности, при физических нагрузках). Не помогает и накопление в <br> 
+                        организме холестерина — строительного материала клеточных мембран. <br> 
+                        Увы, его избыток способен образовывать атеросклеротические бляшки и <br> 
+                        сдерживать пропускную способность сосудов. А со временем — приводить к <br> 
+                        ишемической болезни сердца и даже инфаркту миокарда.
+                    </div>
+                   
+                </div>
+                <div class="next-game-button-cover">
+                    <button id="fourth-ending" class="next-game__button red-background">Следующее задание</button>
+                </div>
+            </div>
+
+            <div id="main-block-fifth-game" class="main-page__block light-green first-challenge-block">
+                <div class="frame-circle"></div>
+                <div class="frame-name">Задание №5</div>
+                <div class="block-heading fifth-block-heading light-green-heart">Сердце <span> не на месте</span></div>
+                <div class="first-block-text">
+                    Уверены, что знаете, где находится 
+                    сердце? Сейчас проверим — 
+                    разместите его там, где нужно.
+                </div>
+            </div>
+            <div id="meta-block-fifth-game" class="main-page__block light-green game fifth-game">
+                <div class="frame-circle"></div>
+                <div class="frame-name">Задание №5</div>
+                <div class="body-img-cover">
+                    <div id="small-heart" class="small-heart-cover" draggable="true">
+                        <img class="small-heart" src="/images/small-heart.png">
+                    </div>
+                    <img class="body__img" src="/images/human-body.png">
+                </div>
+                <div class="game-button-cover">
+                    <button id="fifth-game__button" class="game__button light-green-background">Узнать ответ</button>
                 </div>
             </div>
 

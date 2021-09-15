@@ -109,12 +109,15 @@ main h2{
     color: #000000;
 }
 .main-page__block{ 
+    position: relative;
+
     border: 1px solid;
     border-top: 39px solid;
     box-sizing: border-box;
     border-radius: 20px;
 }
 .main-block{
+    position: relative;
     height: 548px;
     background: url(/images/village-heat-cover.png) no-repeat;
     background-size: 100%;
@@ -123,9 +126,37 @@ main h2{
 .blue{
     color:#0011A7;
 }
+.blue-background{
+    background-color: #0011A7;
+}
+.purple{
+    color: #4700A3;
+}
+.purple-background{
+    background-color: #4700A3;
+}
+.green{
+    color: #036D5A;
+}
+.green-background{
+    background-color: #036D5A;
+}
+.red{
+    color: #BF1B1B;
+}
+.red-background{
+    background-color: #BF1B1B;
+}
+.light-green{
+    color: #4E750F;
+}
+.light-green-background{
+    background-color: #4E750F;
+}
 .beige{
     color:#CCAA8B;
 }
+
 .main-picture-frame{
     position: relative;
     top:-19px;
@@ -147,7 +178,7 @@ main h2{
     border-radius: 0 0 20px 20px;
 }
 .star{
-    position: relative;
+    position: absolute;
     width: 160px;
     height: 160px;
     top: 0;
@@ -156,28 +187,27 @@ main h2{
     transform: rotate(-28.85deg);
 }
 .star__img{
-
     box-sizing: border-box;
 }
 .main-page__block .star:nth-child(2){
-    top:201px;
-    left:-70px;
+    top:190px;
+    left:-97px;
 }
 .main-page__block .star:nth-child(3){
-    top:201px;
-    left:-70px;
+    top:398px;
+    left:20px;
 }
 .main-page__block .star:nth-child(4){
-    top:-210px;
-    left:-70px;
+    top:-77px;
+    left:596px;
 }
 .main-page__block .star:nth-child(5){
-    top:-210px;
-    left:-70px;
+    top:221px;
+    left:1008px;
 }
 .main-page__block .star:nth-child(6){
-    top:-210px;
-    left:-70px;
+    top:298px;
+    left:1134px;
 }
 .main-text{
     margin-top: 88px;
@@ -219,7 +249,6 @@ main h2{
     font-size: 33px;
     line-height: 26px;
 
-    color: #0011A7;
 }
 .first-block-heading{
     margin-top: 46px;
@@ -233,8 +262,22 @@ main h2{
 .block-heading::before{
     display: inline-block;
     vertical-align: top;
-    content: url(/images/heart.svg);
     margin-right: 21px;
+}
+.blue-heart::before{
+    content: url(/images/header-hearts/heart-blue.svg);
+}
+.purple-heart::before{
+    content: url(/images/header-hearts/heart-purple.svg);
+}
+.green-heart::before{
+    content: url(/images/header-hearts/heart-green.svg);
+}
+.red-heart::before{
+    content: url(/images/header-hearts/heart-red.svg);
+}
+.light-green-heart::before{
+    content: url(/images/header-hearts/heart-brown-green.svg);
 }
 .first-block-text{
     margin-top: 40px;
@@ -246,9 +289,8 @@ main h2{
     font-weight: normal;
     font-size: 22px;
     line-height: 29px;
-    color: #0011A7;
 }
-.first-game{
+.game{
     position: relative;
 
     margin-left: 80px;
@@ -256,21 +298,37 @@ main h2{
     left:481px;
     height: 650px;
     width: 620px;
-
-    background-color:#F0F4FE;
 }
-.heart-game{
+.first-game{
+    background-color: #F0F4FE;
+}
+.second-game{
+    background-color: #F5F1FF;
+}
+.third-game{
+    position: relative;
+    background-color: #F2FBF7;
+}
+.fourth-game{
+    position: relative;
+    background-color: #FFF1EE;
+}
+.fifth-game{
+    position: relative;
+    background-color: #F8FFF3;
+}
+.first-heart-game{
     width: 279px;
     height: 382px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
-.heart-game__img{
+.first-heart-game__img{
     width: 279px;
     height: 382px;
 }
-.first-game-button-cover{
+.game-button-cover{
     position: relative;
     width: 290px;
     height: 60px;
@@ -279,11 +337,10 @@ main h2{
     margin-left: auto;
     margin-right: auto;
 }
-.first-game__button{
+.game__button{
     
     width: 290px;
     height: 60px;
-    background: #0011A7;
     border-radius: 20px; 
     border: none;
     
@@ -395,11 +452,10 @@ footer .logo-cover{
     margin-left: 80px;
     margin-top: 29.48px;
 }
-.first-answer-block{
+.answer-block{
     margin-left: auto;
     margin-right: auto;
     width: 940px;
-    height: 704px;
 }
 .first-answer-block .main-page__block.blue{
 
@@ -418,7 +474,6 @@ footer .logo-cover{
 
     letter-spacing: -10px;
 
-    color: #0011A7;
 }
 .first-answer-number span{
     font-family: 'IBM Plex Serif', serif;
@@ -434,14 +489,12 @@ footer .logo-cover{
     font-size: 50px;
     line-height: 50px;
 
-    color: #0011A7;
 }
 .first-answer-hits p{
     font-style: italic;
     font-family: 'IBM Plex Sans', serif;
 }
 .first-answer-text{
-    position: absolute;
 
     margin-top: 70px;
     padding-left: 80px;
@@ -454,7 +507,6 @@ footer .logo-cover{
     font-size: 19px;
     line-height: 26px;
 
-    color: #0011A7;
 }
 .first-answer-text .underline{
     text-decoration: underline;
@@ -462,23 +514,23 @@ footer .logo-cover{
 .first-answer-text .bold{
     font-weight: bold;
 }
-.blue-line{
+.line{
     margin-top: 46px;
-    border-top: 1px solid #0011A7;
+    border-top: 1px solid ;
 }
 .next-game-button-cover{
     position: relative;
+    top:36px;
     width: 290px;
     height: 60px;
-    top:-120px;
 
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
 }
 .next-game__button{
     width: 290px;
     height: 60px;
-    background: #0011A7;
     border-radius: 20px; 
     border: none;
     
@@ -492,9 +544,9 @@ footer .logo-cover{
     color: white;
 }
 .dialog-block{
-    position: relative;
+    position: absolute;
     left:415px;
-    top:-401px;
+    top:263px;
 }
 .dialog{
     width: 198px;
@@ -506,7 +558,6 @@ footer .logo-cover{
     font-size: 12px;
     line-height: 14px;
 
-    background-color: #0011A7;
     color: white;
     border-radius: 20px;
 }
@@ -516,16 +567,299 @@ footer .logo-cover{
     height: 17px;
 
     clip-path: polygon(0% 0%, 100% 0%, 50% 70% );
-    background-color: #0011A7;
 }
-.first-answer-block .heart-game{
-    position: relative;
+.answer-block .first-heart-game{
+    position: absolute;
+    height: 279px;
+    width:205px;
     left: 656px;
-    top:-237px;
+    top:38px;
     margin:0;
 }
-.first-answer-block .heart-game__img{
-    
+.answer-block .first-heart-game__img{
+    height: 279px;
+    width:205px;
+}
+.first-answer-block .first-heart-game__img{
     width: 205px;
     height: 279px;
+    margin: 0;
+}
+.second-game-img-cover{
+    margin-top: 112px;
+    margin-left: 157px;
+}
+.heart-part{
+    position: absolute;
+    top:0px;
+    left:0px;
+
+    cursor: move;
+}
+.first-heart-part{
+    top:301px;
+    left:437px;
+
+    z-index: 11;
+}
+.second-heart-part{
+    top:69px;
+    left:434px;
+    
+    z-index: 13;
+}
+.third-heart-part{
+    top:415px;
+    left:147px;
+
+    z-index: 12;
+}
+.fourth-heart-part{
+    top:309px;
+    left:28px;
+    
+    z-index: 15;
+}
+.fifth-heart-part{
+    top:47px;
+    left:38px;
+    
+    z-index: 14;
+}
+.second-game .game-button-cover{
+    top:127px;
+}
+.answer-block .first-answer{
+    width:620px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 40px;
+}
+.answer-block .first-answer span{
+    font-style: italic;
+}
+.second-answer-row{
+    display: flex;
+    flex-direction: row;
+}
+.full-heart-img-cover{
+    position: relative;
+    margin-top:69px;
+    margin-left:81px;
+}
+.second-answer-text{
+    margin-top:90px;
+    margin-left: 53px;
+    width:380px;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+}
+#second-answer-block .next-game-button-cover{
+    top:30px;
+}
+.pointer{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.pointer-text{
+    position: absolute;
+    top:0;
+    left:0;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.first-pointer{
+    top:101px;
+    left:-38px;
+}
+.first-pointer-text{
+    top:55px;
+    left:-41px;
+}
+.second-pointer{
+    top:116px;
+    left:240px;
+
+    transform: matrix(-1, 0.06, 0.06, 1, 0, 0);
+}
+.second-pointer-text{
+    top:71px;
+    left:270px;
+}
+.third-pointer{
+    top:359px;
+    left:21px;
+
+    transform: rotate(-25.58deg);
+}
+.third-pointer-text{
+    top:341px;
+    left:-20px;
+}
+.fourth-pointer{
+    top:301px;
+    left:214px;
+
+    transform: matrix(-0.9, -0.43, -0.43, 0.9, 0, 0);
+}
+.fourth-pointer-text{
+    top:285px;
+    left:286px;
+}
+.mechanism{
+    position: absolute;
+}
+.first-mechanism{
+    transition: width 2s;
+
+    top:116px;
+    left:55px;
+}
+.mechanism img:hover{
+    height: 110%;
+    width: 110%;
+
+    cursor: pointer;
+}
+.second-mechanism{
+    top:238px;
+    left:177px;
+}
+.third-mechanism{
+    top:5px;
+    left:209px;
+}
+.third-game .game-button-cover{
+    top:555px;
+}
+#third-answer-block{
+    position: relative;
+}
+.third-answer-text{
+    margin-top: 87px;
+    margin-left: 81px;
+    margin-bottom: 107px;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+}
+.tonometer__img{
+    position: absolute;
+    top: 35px;
+    left: 403px;
+    height: 511px;
+    transform: rotate(-90deg);
+}
+#third-answer-block .next-game-button-cover{
+    top:-30px;
+    margin-top: 0;
+}
+#main-block-fourth-game .first-block-heading{
+    margin-top: 86px;
+}
+.bottle-img-cover{
+    position: absolute;
+    top:68px;
+    left:142px;
+}
+.bottle-button-cover{
+    margin-bottom: 38px;
+    margin-top: 335px;
+}
+.bottle__button{
+
+    background: none;
+    border: 1px solid #BF1B1B;
+    color: #BF1B1B;
+}
+.bottles-block{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    margin-left: 74px;
+    margin-top: 36px;
+}
+.small-bottle-cover{
+    height: 192px;
+    width: 167px;
+}
+.big-bottle-cover{
+    margin-left: 49px;
+    height: 192px;
+    width: 167px;
+}
+.fourth-answer-stats img{
+    height: 192px;
+    width: 167px;
+}
+.big-number{
+    font-family: 'IBM Plex Serif', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 149px;
+    line-height: 150px;
+    letter-spacing: 4px;
+}
+.bottle-text{
+    margin-left: 23px;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+}
+.italic-text{
+    font-style: italic;
+}
+.fourth-answer-text{
+    margin-top: 82px;
+    margin-left: 82px;
+    margin-bottom: 115px;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+}
+#fourth-answer-block .next-game-button-cover{
+    margin-top: -66px;
+}
+.fifth-block-heading{
+    margin-top: 78px;
+}
+.body-img-cover{
+    position: relative;
+    top:-26px;
+}
+.small-heart{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 59px;
+}
+.small-heart:focus{
+    cursor: none;
+}
+.small-heart:hover{
+    cursor: move;
+}
+
+.body__img{
+    margin-top: 50px;
+    margin-left: 18px;
 }
